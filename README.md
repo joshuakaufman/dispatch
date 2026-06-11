@@ -22,9 +22,9 @@ Three parts, each doing one job.
 
 ```mermaid
 flowchart LR
-    A[Things tasks] --> D[/focus]
-    B[journals/ reflections] --> D
-    C[me/profile.md role] --> D
+    A[Things tasks] --> D[focus command]
+    B[Journal entries] --> D
+    C[Profile and role] --> D
     D --> E[Morning brief]
 ```
 
