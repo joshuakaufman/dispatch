@@ -1,0 +1,13 @@
+# Personal content, keep it out of the repo
+/me/profile.md
+/journals/*
+!/journals/.gitkeep
+Today.html
+
+# Raycast extension build artefacts
+raycast/journal-entry/node_modules/
+raycast/journal-entry/.raycast/
+raycast/journal-entry/*.tsbuildinfo
+
+# macOS
+.DS_Store
