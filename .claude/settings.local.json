@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "mcp__things__get_inbox",
-      "mcp__things__get_today",
-      "mcp__things__get_upcoming"
-    ]
-  }
-}
