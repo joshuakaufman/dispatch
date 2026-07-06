@@ -57,7 +57,7 @@ Everything else is context. If the same thing recurs across entries without reso
 ## Things handling
 
 - Tasks come from the Things area matching the requested context: **Work** for `work`, **Personal** for `personal`, both for `all`. Read via the MCP, scoped to the next two weeks.
-- `Start` means when the task was started, not its deadline.
+- `Start` and `deadline` are separate fields. `Start` means when the task was started, not its deadline. Only a task with a `deadline` field set has a hard deadline — never treat a `start` date as one.
 - For the briefing, reprioritise the tasks yourself against the matching role. Don't expect a pre-sorted list.
 
 ## How to work with me

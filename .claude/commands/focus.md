@@ -27,7 +27,7 @@ First, establish today's date. Run `date "+%Y-%m-%d %A"` and use the result as t
 
 - **Top 3 priorities for today** — Always lead with the work tasks. Never more than 3.
 - **The thing you're avoiding** — pull from profile growth edges, open threads, and any `!! ` lines from recent journal entries. Name it plainly. If a specific action has been committed to but not done, name it directly every day until it's complete.
-- **Hard deadlines** — any tasks with a specific deadline. Always show hard deadlines until they pass.
+- **Hard deadlines** — only tasks with the `deadline` field set. Never include a task just because it has a `start` date, even if that date is today or tomorrow. Always show hard deadlines until they pass.
 - **Journal signals** — from the last 7 days of `journals/` entries: (a) extract any `!! ` lines and fold them into "The thing you're avoiding" — treat them as first-person self-flags, not third-party observations; (b) extract any `→ ` or `-> ` lines as flagged reflections; (c) if the same theme recurs across multiple entries without resolution, name the pattern plainly; (d) if there are no journal files in the last 3 days, note the gap — absence from the journal is usually avoidance data.
 - **One reflection prompt** — one short question drawn from the growth edges in your profile, to give you something to sit with. Rotate across the edges named there, and don't repeat the same one two days running.
 
