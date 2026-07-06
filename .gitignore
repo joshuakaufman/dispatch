@@ -11,3 +11,4 @@ raycast/journal-entry/*.tsbuildinfo
 
 # macOS
 .DS_Store
+.claude/settings.local.json
