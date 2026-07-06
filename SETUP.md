@@ -18,11 +18,11 @@ Install uv if you don't have it with `brew install uv`, and check it with `which
 Clone or copy this folder somewhere stable. The path matters, because `/focus` reads `journals/` relative to the folder that holds `CLAUDE.md`, and the Raycast extension writes to an absolute path you'll set to match.
 
 ```bash
-git clone <your-fork> ~/Code/brain
-cd ~/Code/brain
+git clone <your-fork> ~/Code/dispatch
+cd ~/Code/dispatch
 ```
 
-Use any location you like. The rest of this guide assumes `~/Code/brain`.
+Use any location you like. The rest of this guide assumes `~/Code/dispatch`.
 
 ## 2. Set up your profile
 
@@ -47,7 +47,7 @@ Turn on Things URLs first: **Things → Settings → General → Enable Things U
 The repo ships a `.mcp.json` that registers the server. Start Claude Code in the repo folder, and approve the `things` server when it prompts.
 
 ```bash
-cd ~/Code/brain
+cd ~/Code/dispatch
 claude
 ```
 
@@ -64,10 +64,10 @@ npm run dev
 That registers the command with Raycast, and it stays installed after you stop the dev server. In Raycast, open the command's preferences and set **Journal Folder** to your repo's journals folder:
 
 ```
-~/Code/brain/journals
+~/Code/dispatch/journals
 ```
 
-This has to match where `/focus` reads, or you'll journal into one folder while the brief reads an empty one. Test it: trigger the command, write a line, press Cmd-Enter, then check that `~/Code/brain/journals/YYYY_MM_DD.md` exists with your line as a `- ` entry.
+This has to match where `/focus` reads, or you'll journal into one folder while the brief reads an empty one. Test it: trigger the command, write a line, press Cmd-Enter, then check that `~/Code/dispatch/journals/YYYY_MM_DD.md` exists with your line as a `- ` entry.
 
 ## 6. First brief
 
@@ -83,7 +83,7 @@ It reads your profile, the last week of journal entries, and your live work task
 
 If you want the brief generated before you sit down, a LaunchAgent can run it on a schedule and write `Today.html`. Set your Mac to wake just before with `pmset`, then load an agent like this, with the paths changed to yours.
 
-`~/Library/LaunchAgents/com.you.brain.focus.plist`:
+`~/Library/LaunchAgents/com.you.dispatch.plist`:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -91,12 +91,12 @@ If you want the brief generated before you sit down, a LaunchAgent can run it on
 <plist version="1.0">
   <dict>
     <key>Label</key>
-    <string>com.you.brain.focus</string>
+    <string>com.you.dispatch.focus</string>
     <key>ProgramArguments</key>
     <array>
       <string>/bin/zsh</string>
       <string>-lc</string>
-      <string>cd ~/Code/brain && claude -p "/focus work"</string>
+      <string>cd ~/Code/dispatch && claude -p "/focus work"</string>
     </array>
     <key>StartCalendarInterval</key>
     <dict>
@@ -107,4 +107,4 @@ If you want the brief generated before you sit down, a LaunchAgent can run it on
 </plist>
 ```
 
-Load it with `launchctl load ~/Library/LaunchAgents/com.you.brain.focus.plist`. This part is optional, and worth leaving until the manual `/focus` reads the way you want.
+Load it with `launchctl load ~/Library/LaunchAgents/com.you.dispatch.focus.plist`. This part is optional, and worth leaving until the manual `/focus` reads the way you want.
