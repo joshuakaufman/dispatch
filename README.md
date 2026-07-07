@@ -22,7 +22,7 @@ Three parts, each doing one job.
 
 ```mermaid
 flowchart LR
-    A[Things tasks] --> D[/focus]
+    A[Things tasks] --> D["/focus"]
     B[journals/ reflections] --> D
     C[me/profile.md role] --> D
     D --> E[Morning brief]
