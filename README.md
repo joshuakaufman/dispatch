@@ -91,6 +91,8 @@ The system assumes a Mac, because it leans on Things and Raycast. If you don't u
 
 The file-based, command-driven shape comes from [jibbajabba/brain](https://github.com/jibbajabba/brain). This version swaps the task source for Things, the capture for Raycast, and adds the role-based reprioritisation.
 
+This project was built with Claude Code.
+
 ## License
 
 MIT. See the manifest for details, and replace the author field with your own before publishing the extension.
